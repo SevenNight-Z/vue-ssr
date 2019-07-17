@@ -3,7 +3,7 @@
     <div class="login_box">
       <!-- 头像区域 -->
       <div class="avatar_box">
-        <img src="../assets/lf.jpg" alt="">
+        <img src="../assets/jj.png" alt="">
       </div>
       <!-- 登录表单区域 -->
       <el-form ref="loginFormRef" :model="loginForm" :rules="loginFormRules" label-width="0px" class="login_form">
@@ -53,8 +53,7 @@ export default {
     // 点击重置按钮，重置登录表单
     resetLoginForm() {
       // console.log(this);
-      this.$refs.loginFormRef.resetFields();
-      this.loginForm.username = this.loginForm.password = '';
+      this.$refs.loginFormRef.resetFields()
     },
     login() {
       this.$refs.loginFormRef.validate(async valid => {
